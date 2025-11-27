@@ -1,0 +1,16 @@
+**Казакова Александра**
+Fullstack разработчик
+
+ Email: arrosasha@gmail.com
+ Телефон: +7 980 755-03-71
+ GitHub: github.com/username
+
+**Ключевые навыки:**
+- Frontend: JavaScript, HTML/CSS, React
+- Backend: Python, Node.js
+- Базы данных: PostgreSQL, MySQL
+- Инструменты: Git, VS Code
+
+**Образование:**
+- Университет РТУ МИРЭА (Fullstack разработка (2024-2028))
+Готова к сложным задачам и быстрой интеграции в команду.

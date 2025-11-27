@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты - Портфолио студента</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Skip-link для доступности -->
+    <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
+
+    <!-- Навигация -->
+    <nav class="navbar" aria-label="Основная навигация">
+        <div class="container nav-container">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html">Главная</a></li>
+                <li><a class="nav-link current" href="projects.html">Проекты</a></li>
+                <li><a class="nav-link" href="diary.html">Дневник</a></li>
+                <li><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main id="main-content" class="projects-page">
+        <div class="container">
+            <h1 class="section-title">Мои проекты</h1>
+            
+            <div class="projects-area">
+                <div class="projects-grid">
+                    <!-- Проект 1 -->
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Личный сайт</h2>
+                            <p class="card-text text-muted">HTML, CSS</p>
+                            <p class="card-text">Полностью адаптивный личный сайт-портфолио с современным дизайном и доступностью</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary">HTML5</span>
+                                <span class="badge bg-info">CSS3</span>
+                                <span class="badge bg-success">Адаптивность</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary btn-sm project-details" data-project="1">
+                                Подробнее
+                            </button>
+                        </div>
+                    </article>
+                    
+                    <!-- Проект 2 -->
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Калькулятор на C#</h2>
+                            <p class="card-text text-muted">C#</p>
+                            <p class="card-text">Консольное приложение с поддержкой основных математических операций</p>
+                            <div class="project-tech">
+                                <span class="badge bg-warning">C#</span>
+                                <span class="badge bg-secondary">.NET</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary btn-sm project-details" data-project="2">
+                                Подробнее
+                            </button>
+                        </div>
+                    </article>
+                    
+                    <!-- Проект 3 -->
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Менеджер задач</h2>
+                            <p class="card-text text-muted">Qt, C++</p>
+                            <p class="card-text">Полнофункциональный менеджер задач с возможностью добавления и удаления задач</p>
+                            <div class="project-tech">
+                                <span class="badge bg-info">Qt</span>
+                                <span class="badge bg-success">C++</span>
+                                <span class="badge bg-dark">GUI</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary btn-sm project-details" data-project="3">
+                                Подробнее
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center mb-0">© 2025 Мои проекты</p>
+        </div>
+    </footer>
+
+    <script src="scripts/projects.js"></script>
+</body>
+</html>

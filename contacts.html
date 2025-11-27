@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Портфолио студента</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+    <!-- Skip-link для доступности -->
+    <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
+
+    <!-- Навигация -->
+    <nav class="navbar" aria-label="Основная навигация">
+        <div class="container nav-container">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html">Главная</a></li>
+                <li><a class="nav-link" href="projects.html">Проекты</a></li>
+                <li><a class="nav-link" href="diary.html">Дневник</a></li>
+                <li><a class="nav-link current" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main id="main-content" class="contacts-page">
+        <div class="container">
+            <h1 class="section-title">Свяжитесь со мной</h1>
+            
+            <div class="row">
+                <!-- Форма обратной связи -->
+                <div class="col-lg-8 mb-4">
+                    <section class="card" aria-labelledby="contact-form-title">
+                        <div class="card-body">
+                            <h2 id="contact-form-title" class="h4 mb-4">Форма обратной связи</h2>
+                            <form id="contactForm" novalidate>
+                                <div class="row">
+                                    <div class="mb-3">
+    <label for="name" class="form-label">
+        Имя <span class="required" aria-hidden="true">*</span>
+    </label>
+    <input type="text" class="form-control" id="name" name="name" required 
+           aria-required="true" aria-describedby="nameHelp nameError">
+    <div id="nameHelp" class="form-text">Введите ваше полное имя</div>
+    <div id="nameError" class="invalid-feedback" role="alert" aria-live="polite">
+        Пожалуйста, введите ваше имя
+    </div>
+</div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email *</label>
+                                        <input type="email" class="form-control" id="email" required aria-required="true" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Мы не передаем ваш email третьим лицам</div>
+                                        <div class="invalid-feedback">Пожалуйста, введите корректный email</div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Тема</label>
+                                    <input type="text" class="form-control" id="subject" aria-describedby="subjectHelp">
+                                    <div id="subjectHelp" class="form-text">Кратко опишите тему вашего сообщения</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Сообщение *</label>
+                                    <textarea class="form-control" id="message" rows="5" required aria-required="true" aria-describedby="messageHelp"></textarea>
+                                    <div id="messageHelp" class="form-text">Опишите ваш вопрос или предложение подробно</div>
+                                    <div class="invalid-feedback">Пожалуйста, введите ваше сообщение</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-send" aria-hidden="true"></i> Отправить сообщение
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                
+                <!-- Контактная информация -->
+                <div class="col-lg-4">
+                    <section class="card" aria-labelledby="contact-info-title">
+                        <div class="card-body">
+                            <h3 id="contact-info-title" class="h4 mb-4">Контакты</h3>
+                            
+                            <div class="contact-info">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-envelope contact-icon text-primary me-3" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Email</strong>
+                                        <div>arrosasha@gmail.com</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-telephone contact-icon text-success me-3" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Телефон</strong>
+                                        <div>+7 (980) 755-03-71</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-github contact-icon text-dark me-3" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>GitHub</strong>
+                                        <div>github.com/yowaike</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-geo-alt contact-icon text-danger me-3" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Местоположение</strong>
+                                        <div>Москва, Россия</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            
+                            <h4 class="h5 mb-3">Социальные сети</h4>
+                            <div class="social-links">
+                                <a href="https://t.me/yowaike" class="btn btn-outline-primary btn-sm me-2 mb-2" target="_blank" rel="noopener" aria-label="Telegram">
+                                    <i class="bi bi-telegram" aria-hidden="true"></i> Telegram
+                                </a>
+                                <a href="https://instagram.com/yowaike" class="btn btn-outline-danger btn-sm me-2 mb-2" target="_blank" rel="noopener" aria-label="Instagram">
+                                    <i class="bi bi-instagram" aria-hidden="true"></i> Instagram
+                                </a>
+                                <a href="https://github.com/yowaike" class="btn btn-outline-dark btn-sm me-2 mb-2" target="_blank" rel="noopener" aria-label="GitHub">
+                                    <i class="bi bi-github" aria-hidden="true"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Дополнительная информация -->
+                    <section class="card mt-4" aria-labelledby="availability-title">
+                        <div class="card-body">
+                            <h4 id="availability-title" class="h5 mb-3">Доступность</h4>
+                            <div class="availability-info">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-clock text-success me-2" aria-hidden="true"></i>
+                                    <span>Отвечаю в течение 24 часов</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-chat-dots text-info me-2" aria-hidden="true"></i>
+                                    <span>Предпочитаю текстовые сообщения</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-translate text-warning me-2" aria-hidden="true"></i>
+                                    <span>Общение на русском и английском</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="text-center mb-0">© 2025 Контакты</p>
+        </div>
+    </footer>
+
+    <script src="scripts/contacts.js"></script>
+</body>
+</html>

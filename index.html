@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Портфолио студента</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Skip-link для доступности -->
+    <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
+
+    <!-- Навигация -->
+    <nav class="navbar" aria-label="Основная навигация">
+        <div class="container nav-container">
+            <ul class="nav-list">
+                <li><a class="nav-link current" href="index.html">Главная</a></li>
+                <li><a class="nav-link" href="projects.html">Проекты</a></li>
+                <li><a class="nav-link" href="diary.html">Дневник</a></li>
+                <li><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main id="main-content">
+        <!-- Герой секция -->
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1 id="hero-title" class="hero-title">Привет! Я Казакова Александра</h1>
+                    <h2 class="hero-subtitle">из группы ЭФБО-03-24</h2>
+                    <p class="hero-description">Студентка 2 курса по фуллстек-разработке. Изучаю React и Node.js. В постоянном поиске проектов для развития софт и хард скиллов</p>
+                    <a href="assets/Казакова-Александра-2.pdf" class="btn" download>
+                        <i class="bi bi-download" aria-hidden="true"></i> Скачать резюме
+                    </a>
+                </div>
+                <div class="hero-photo">
+                    <img src="images/me.jpg" alt="Фото студента Казакова Александра" 
+                         class="student-img" width="350" height="350" loading="eager">
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Навыки -->
+        <section class="skills-section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" class="section-title">Мои навыки</h2>
+                
+                <div class="skills-grid">
+                    <div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-progress html-css">90%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-progress javascript">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Bootstrap</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-progress bootstrap">85%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>CSS</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                <div class="skill-progress react">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Лучшие проекты -->
+        <section class="best-projects" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="section-title">Лучшие проекты</h2>
+                
+                <div class="projects-grid">
+                    <article class="card">
+                        <div class="card-body text-center">
+                            <div class="card-icon">
+                                <i class="bi bi-laptop" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="card-title">Сайт-портфолио</h3>
+                            <p class="card-text">Адаптивный личный сайт</p>
+                            <a href="projects.html" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card-body text-center">
+                            <div class="card-icon">
+                                <i class="bi bi-phone" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="card-title">Калькулятор</h3>
+                            <p class="card-text">Консольное приложение</p>
+                            <a href="projects.html" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card-body text-center">
+                            <div class="card-icon">
+                                <i class="bi bi-tablet" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="card-title">Менеджер задач</h3>
+                            <p class="card-text">Десктоп приложение</p>
+                            <a href="projects.html" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center mb-0">© 2025 Портфолио студента</p>
+        </div>
+    </footer>
+</body>
+</html>
